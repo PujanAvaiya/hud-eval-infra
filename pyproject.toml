@@ -1,0 +1,13 @@
+[project]
+name = "my_env"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "fastmcp>=0.1.2",
+  "hud-python[agent]>=0.0.13",
+  "opentelemetry-sdk>=1.27.0",
+  "opentelemetry-exporter-otlp>=1.27.0",
+]
+
+[project.scripts]
+my_env = "controller.server:run"
